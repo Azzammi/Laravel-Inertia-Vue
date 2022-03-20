@@ -1,22 +1,20 @@
 <template>
-    <Layout>
-        <h1>Users</h1>
-        <div style="margin-top: 400px">
-            <p>The current time is {{time}}</p>
-        </div>
+    <h1>Users</h1>
+    <div style="margin-top: 400px">
+        <p>The current time is {{time}}</p>
+    </div>
 
-        <Link
-            href="/users"
-            class="text-blue-500"
-            preserve-scroll>
-            Refresh
-        </Link>
-    </Layout>
+    <Link
+        href="/users"
+        class="text-blue-500"
+        preserve-scroll>
+        Refresh
+    </Link>
 </template>
 <script>
     import Layout from "../Shared/Layout";
     export default {
-        components: { Layout },
+        layout: Layout,
         props: {time: String}
     };
 </script>
