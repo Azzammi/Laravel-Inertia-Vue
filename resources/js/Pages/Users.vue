@@ -1,4 +1,7 @@
 <template>
+    <Head>
+        <title>Users</title>
+    </Head>
     <h1>Users</h1>
     <div style="margin-top: 400px">
         <p>The current time is {{time}}</p>
@@ -11,3 +14,6 @@
         Refresh
     </Link>
 </template>
+<script setup>
+    defineProps({time:String});
+</script>
