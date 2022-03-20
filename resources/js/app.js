@@ -5,8 +5,8 @@ import { reduce } from 'lodash';
 import Layout from './Shared/Layout'
 
 createInertiaApp({
-  resolve: name => {
-    let page = require(`./Pages/${name}`).default;
+  resolve: async name => {
+    let page = (await import(`./Pages/${name}`)).default;
 
     page.layout ??= Layout;
 
