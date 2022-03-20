@@ -3,9 +3,6 @@
         <h1>Setting</h1>
     </Layout>
 </template>
-<script>
+<script setup>
     import Layout from "../Shared/Layout";
-    export default {
-        components: { Layout },
-    };
 </script>
